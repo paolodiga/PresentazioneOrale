@@ -2,14 +2,77 @@ body {
   font-size: 50px !important;
   font-family: Roboto !important;
   font-weight: 100 !important;
-  color: rgb(110, 110, 110) !important;
+  color: silver !important;
+  background-color: rgb(20, 20, 20) !important;
 }
 
+::-webkit-scrollbar{width:10px;}
+::-webkit-scrollbar-track{background:rgb(20, 20, 20);}
+::-webkit-scrollbar-thumb{background-color:transparent;border:2px solid rgb(110,110,110);border-radius:10px;}
+::-webkit-scrollbar-thumb:hover{background-color:rgb(110,110,110);border:2px solid rgb(20,20,20);}
+
 .slide {
-  height: 1080px;
-  text-align: center;
+  position: relative;
+  height: 1005px;
+}
+
+.spacer {
+  height: 100px;
+  width: 100%;
+  background-color: rgb( 20, 20, 20 );
+}
+
+.overlay-1 {
+  position: absolute;
+  top: 0;
+  height: 1005px;
+  width: 100%;
+  overflow: scroll;
+}
+
+.overlay-1::-webkit-scrollbar {
+  display: none;
 }
 
 .main-title {
   font-size: 100px;
+}
+
+.gradient-ltr {
+  background: linear-gradient(to right, black 0%, rgba( 20, 20, 20, 0.8) 30%, transparent 100%)
+}
+
+.gradient-scroll {
+  background: linear-gradient(to top, rgb( 20, 20, 20 ) 2%, transparent, rgb( 20, 20, 20 ));
+}
+
+.text-over-l {
+  position: absolute;
+  top: 400px;
+  left: 100px;
+}
+
+.text-over-r {
+  position: absolute;
+  top: 400px;
+  right: 100px;
+}
+
+.text-over-small-l {
+  position: absolute;
+}
+
+.subtitle {
+  color: rgb(110, 110, 110);
+  font-weight: 100;
+  font-size: 60px;
+}
+
+.list-text {
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.m-200 {
+  margin: 200px;
 }
