@@ -6,6 +6,10 @@ body {
   background-color: rgb(20, 20, 20) !important;
 }
 
+hr {
+  border-color: rgba(239, 108, 0, 0.6) !important;
+}
+
 ::-webkit-scrollbar{width:10px;}
 ::-webkit-scrollbar-track{background:rgb(20, 20, 20);}
 ::-webkit-scrollbar-thumb{background-color:transparent;border:2px solid rgb(110,110,110);border-radius:10px;}
@@ -39,6 +43,11 @@ body {
 .slide {
   position: relative;
   height: 1005px;
+}
+
+.slide-small {
+  position: relative;
+  height: 900px;
 }
 
 .spacer {
@@ -87,11 +96,6 @@ body {
   position: absolute;
 }
 
-.text-center {
-  text-align: center;
-  padding-top: 25%;
-}
-
 .subtitle {
   color: rgb(110, 110, 110);
   font-weight: 100;
@@ -105,7 +109,6 @@ body {
 
 .slide-title {
   width: 100%;
-  padding-top: 100px;
   text-align: center;
 }
 
@@ -122,6 +125,41 @@ body {
   display: none;
 }
 
+.new_uses {
+  background: linear-gradient(to right, rgba(239, 108, 0, 0), rgba(239, 108, 0, 0));
+  cursor: pointer;
+}
+
+.new_uses:hover {
+  background: linear-gradient(to right, rgba(239, 108, 0, 0.6), rgba(239, 108, 0, 0));
+}
+
+.new_uses_content {
+  display: none;
+}
+
+.myButton {
+  transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+  margin: 20px;
+  padding: 10px 20px;
+  color: silver;
+  background-color: rgba(239, 108, 0, 0.05);
+  border: 1px solid rgba(239, 108, 0, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.myButton:hover {
+  transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+  background-color: rgba(239, 108, 0, 0.4);
+  border: 1px solid rgba(239, 108, 0, 0.2);
+}
+
+.w-h-100 {
+  width: 100%;
+  height: 100%;
+}
+
 .m-50 {
   margin: 50px;
 }
@@ -134,8 +172,24 @@ body {
   margin: 200px;
 }
 
+.mt-10 {
+  margin-top: 10px;
+}
+
 .mt-50 {
   margin-top: 50px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mt-150 {
+  margin-top: 150px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
 }
 
 .mb-50 {
@@ -146,10 +200,22 @@ body {
   margin-bottom: 56px;
 }
 
-.mt-100 {
-  margin-top: 100px;
+.pt-25 {
+  padding-top: 25%;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.p-10 {
+  padding: 10px;
 }
 
 .p-20 {
   padding: 30px;
+}
+
+.pl-20 {
+  padding-left: 20px;
 }
