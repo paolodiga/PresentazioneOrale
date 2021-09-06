@@ -42,7 +42,7 @@ hr {
 
 .slide {
   position: relative;
-  height: 1005px;
+  height: 1080px;
 }
 
 .slide-small {
@@ -59,7 +59,7 @@ hr {
 .overlay-1 {
   position: absolute;
   top: 0;
-  height: 1005px;
+  height: 1080px;
   width: 100%;
   overflow: scroll;
 }
